@@ -7,14 +7,34 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <div class="container">
-        <h1>Photo to PDF Converter</h1>
-        <input type="file" id="upload" accept="image/*">
-        <button id="download">Convert to PDF</button>
+
+        <div class="icon">📄</div>
+
+        <h1>Photo to PDF</h1>
+        <p class="subtitle">Convert your images into PDF documents easily.</p>
+
+        <div class="upload-box">
+            <div class="upload-icon">📸</div>
+            <h3>Upload Your Photo</h3>
+            <p>Select an image from your device</p>
+
+            <input type="file" id="upload" accept="image/*">
+        </div>
+
+        <button id="download">
+            Convert to PDF <span>→</span>
+        </button>
+
+        <p class="footer">Fast • Simple • Secure</p>
+
         <canvas id="canvas" style="display:none;"></canvas>
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="script.js"></script>
+
 </body>
 </html>
